@@ -6,9 +6,11 @@ public class Loan
 	private double Amount;
 	private String Type;
 	
-	public Loan()
+	public Loan(int Loan_Value, int ID, String tType)
 	{
-		//constructor
+		Loan_No = ID;
+		Amount = Loan_Value;
+		Type = tType;
 	}
 	
 	public void addCustomer()
@@ -22,5 +24,10 @@ public class Loan
 	public void getEMI()
 	{
 		
+	}
+	
+	public double getAmount()
+	{
+		return Amount;
 	}
 }

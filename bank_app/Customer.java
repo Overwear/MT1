@@ -8,6 +8,7 @@ public class Customer
 	private String Phone;
 	private Current_Account A;
 	private Savings_Account B;
+	private Loan C;
 	public Customer(int nNum, String nName, String aAddy, double cChecking, double sSaving, int lLoan)
 	{
 		Cust_ID = nNum;
@@ -16,17 +17,33 @@ public class Customer
 		Phone = "612-135-4444"; 	//default number
 		A = new Current_Account(cChecking, nNum, 1.0, "1/1/2017");
 		B = new Savings_Account(sSaving, nNum, "1/1/2017");
+		C = new Loan(lLoan, nNum, "Type");
 		
 	}
 	
-	public Account getCheckings()
+	public double getCheckings()
 	{
-		return A;
+		return A.getBalance();
 	}
 	
-	public Account getSavings()
+	public double getSavings()
 	{
-		return B;
+		return B.getBalance();
+	}
+	
+	public String getName()
+	{
+		return Name;
+	}
+	
+	public String getAddy()
+	{
+		return Address;
+	}
+	
+	public double getLoan()
+	{
+		return C.getAmount();
 	}
 	
 	

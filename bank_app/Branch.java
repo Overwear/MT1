@@ -12,16 +12,22 @@ public class Branch
 	{
 		Branch_Code = bc;
 		City = cCity;
-		
 	}
 	public void addAccount(int nNum, String nName, String aAddy, double cChecking, double sSaving, int lLoan)
 	{
-		 c = new Customer(nNum, nName, aAddy, cChecking, sSaving, lLoan);
+	 	c = new Customer(nNum, nName, aAddy, cChecking, sSaving, lLoan);
+		CustomerList.add(c);
 	}
-	CustomerList.add(c);
-	public void removeAccount(Customer a)
+	public void removeAccount(String name)
 	{
-		CustomerList.remove(a);
+		for (Customer n: CustomerList)
+		{
+			String nName = n.getName();
+			if (nName.equals(name))
+			{
+				CustomerList.remove(n);
+			}
+		}
 	}
 	public void addLoan()
 	{
