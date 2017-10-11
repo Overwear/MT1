@@ -1,7 +1,8 @@
 package bank_app;
 
+
 public class Savings_Account extends Account
-{
+	{
 	private double Min_Balance;
 	private String Date_of_Opening;
 	

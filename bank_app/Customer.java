@@ -46,5 +46,9 @@ public class Customer
 		return C.getAmount();
 	}
 	
+	public int getID()
+	{
+		return Cust_ID;
+	}
 	
 }

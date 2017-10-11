@@ -55,9 +55,20 @@ public class Bank
 	}
 	public void print()
 	{
-		for (int i = 0; i > 4; i++)
+		for (int i = 0; i < 4; i++)
 		{
-			
+			BranchList[i].printBranchName();
+			BranchList[i].printAllCustomers();
+		}
+	}
+	public void removeCustomer(int CustID)
+	{
+		for (Branch b: BranchList)
+		{
+			if(b.isCustomerInThisBranch(CustID))
+			{
+				b.removeAccount(CustID);
+			}
 		}
 	}
 }
