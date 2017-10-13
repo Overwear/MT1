@@ -7,8 +7,11 @@ import org.junit.Test;
 public class Bank_Test {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void Bank_test_1() 
+	{
+		Bank Test_Bank = new Bank("Test Bank", 1234);
+		String name = Test_Bank.getBankName();
+		assertEquals(name, "Test_bank");
 	}
 
 }

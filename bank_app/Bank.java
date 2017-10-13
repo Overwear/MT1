@@ -36,7 +36,7 @@ public class Bank
 	
 	public void addBranch(Branch i)
 	{
-		//BranchList.add(i);
+
 	}
 	
 	public void removeBranch()
@@ -71,4 +71,9 @@ public class Bank
 			}
 		}
 	}
+	public String getBankName()
+	{
+		return name;
+	}
+	
 }
