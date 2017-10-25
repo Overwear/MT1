@@ -11,7 +11,7 @@ public class Bank_Test {
 	{
 		Bank Test_Bank = new Bank("Test Bank", 1234);
 		String name = Test_Bank.getBankName();
-		assertEquals(name, "Test_bank");
+		assertEquals(name, "Test Bank");
 	}
 
 }

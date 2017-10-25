@@ -3,7 +3,7 @@ package bank_app;
 public class Loan 
 {
 	private int Loan_No;
-	private double Amount;
+	private int Amount;
 	private String Type;
 	
 	public Loan(int Loan_Value, int ID, String tType)
@@ -26,7 +26,7 @@ public class Loan
 		
 	}
 	
-	public double getAmount()
+	public int getAmount()
 	{
 		return Amount;
 	}
